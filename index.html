@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystal Collector</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div>
         <h1>Crystal Collector</h1>
         <div> 
-            <h2>Target Score:</h2>
+            <h2>Target Score: <span id="target-score"></span></h2>
+        </div>
+        <div> 
+            <h2>Your Score: <span id="your-score"></span></h2>
         </div>
         <div>
-            <button>
+            <button id="crystal1" class="crystal">
                 <img src="assets/images/crystal1.png">
             </button>
-            <button>
+            <button id="crystal2" class="crystal">
                 <img src="assets/images/crystal2.png">
             </button>
-            <button>
+            <button id="crystal3" class="crystal">
                 <img src="assets/images/crystal3.png">
             </button>
-            <button>
+            <button id="crystal4" class="crystal">
                 <img src="assets/images/crystal4.png">
             </button>
         </div>
@@ -35,5 +39,6 @@
 
     </div>
     
+<script src="assets/javascript/game.js"></script>
 </body>
 </html>
