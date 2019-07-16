@@ -1,5 +1,4 @@
 #won-lost{
-    color: red;
     font-style: italic;
 }
 
@@ -25,16 +24,9 @@
     padding-left: 15px;
 }
 
-.table{
-      width: 50%;
-}
-
-.container{
+.row{
+    margin: 0;
     margin-bottom: 20px;
-}
-
-.white{
-    background: white;
 }
 
 body{

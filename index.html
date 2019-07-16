@@ -7,7 +7,7 @@
     <title>Crystal Collector</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css"
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -26,42 +26,36 @@
             <br>
             Each time the game starts, the value of each crystal will change.
         </div>
-        <div class="table table-bordered table-dark">
-            <tr>
+        <div class="row border border-warning">
+            <div id="crystal-counts" class="col-md-6 table-bordered table-dark">
+                <h2>Crystal Count</h2>
                 <h2 class="label">Target Score: <span id="target-score"></span></h2>
-            </tr>
                 <h2 class="label">Your Score: <span id="your-score"></span></h2>
-            </tr>
+            </div>
+            <div class="col-md-6 table-bordered table-dark">
+                <h2>Scoreboard</h2>
+                <div><h3 class="label">Wins: <span id="wins"></span></h3></div>
+                <div><h3 class="label">Losses: <span id="losses"></h3></span></div>
+                <div><span id="won-lost"></span></div>
+            </div>
         </div>
         <div class="container">
-            <button id="crystal1" class="crystal">
-                <img src="assets/images/crystal1.png">
-            </button>
-            <button id="crystal2" class="crystal">
-                <img src="assets/images/crystal2.png">
-            </button>
-            <button id="crystal3" class="crystal">
-                <img src="assets/images/crystal3.png">
-            </button>
-            <button id="crystal4" class="crystal">
-                <img src="assets/images/crystal4.png">
-            </button>
+            <div class="text-center">
+                <button id="crystal1" class="crystal">
+                    <img src="assets/images/crystal1.png">
+                </button>
+                <button id="crystal2" class="crystal">
+                    <img src="assets/images/crystal2.png">
+                </button>
+                <button id="crystal3" class="crystal">
+                    <img src="assets/images/crystal3.png">
+                </button>
+                <button id="crystal4" class="crystal">
+                    <img src="assets/images/crystal4.png">
+                </button>
+            </div>
         </div>
-        <div class="table table-bordered table-dark">
-            <tr>
-                <h2>Scoreboard</h2>
-            </tr>
-            <tr>
-                <div><span id="won-lost"></span></div>
-            </tr>
-            <tr>
-                <div><h3 class="label">Wins: <span id="wins"></span></h3></div>
-            </tr>
-            <tr>
-                <div><h3 class="label">Losses: <span id="losses"></h3></span></div>
-            </tr>
-        </div>
-
+        
     </div>
     
 <script src="assets/javascript/game.js"></script>

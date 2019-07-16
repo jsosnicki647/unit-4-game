@@ -53,6 +53,7 @@ $(document).ready(function(){
         else if(game.cummScore > game.targetScore){
             game.losses++
             $("#losses").text(game.losses)
+            $("#won-lost").css("color","red")
             $("#won-lost").text("You lost! Select a crystal to begin a new game.")
             game.isRoundOver = true
         }
