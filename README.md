@@ -7,3 +7,5 @@ The value of each crystal is hidden from you until you click on it.
 Each time the game starts, the value of each crystal will change.
 
 Technologies: JavaScript, JQuery, Bootstrap
+
+deployed site: https://jsosnicki647.github.io/unit-4-game/
